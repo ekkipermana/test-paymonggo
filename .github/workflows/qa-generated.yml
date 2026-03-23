@@ -42,7 +42,7 @@ jobs:
       - name: Install Playwright dependencies
         working-directory: playwright_template
         run: |
-          npm ci
+          npm install
           npx playwright install --with-deps chromium
 
       - name: Start backend
